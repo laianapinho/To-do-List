@@ -1,0 +1,37 @@
+.container {
+    width: 500px;              /* Define largura fixa de 500 pixels */
+    margin: 0 auto;            /* Centraliza o container horizontalmente na página */
+}
+
+#form-add-todo {
+    display: flex;             /* Usa flexbox para layout dos elementos filhos */
+    gap: 0.5rem;              /* Espaço de 0.5rem entre elementos filhos */
+}
+
+#form-add-todo input {
+    flex: 1;                  /* Input ocupa todo espaço restante disponível */
+    border: 1px solid black;  /* Borda preta sólida de 1 pixel */
+    height: 2rem;             /* Altura de 2rem */
+    padding: 0 0.5rem;        /* Espaçamento interno: 0 em cima/baixo, 0.5rem nas laterais */
+}
+
+#form-add-todo button {
+    background: pink;         /* Cor de fundo rosa */
+    border: none;             /* Remove a borda padrão do botão */
+    width: 3rem;              /* Largura fixa de 3rem */
+}
+
+#todo-list {
+    list-style: none;         /* Remove os bullets/marcadores da lista */
+    word-wrap: break-word;    /* Quebra palavras longas para caber na linha */
+    padding: 0;               /* Remove espaçamento interno padrão da lista */
+    border: 1px solid #ebebec; /* Borda cinza claro de 1 pixel ao redor da lista */
+}
+
+#todo-list li {
+    padding: 0.5rem 1rem;     /* Espaçamento interno: 0.5rem em cima/baixo, 1rem nas laterais */
+}
+
+#todo-list li:nth-child(odd) {
+    background-color: #f6f6f6; /* Cor de fundo cinza claro para itens ímpares (1º, 3º, 5º...) */
+}
